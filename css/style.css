@@ -219,6 +219,10 @@ header {
     color: white;
 }
 
+.defis .description-defis p{
+    color: #0B581E;
+}
+
 @media screen and (min-width: 834px) {
     body {
         background-color: #ffffff;
@@ -227,6 +231,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        padding-bottom: 4%;
     }
     .defis {
         width: 95%;
