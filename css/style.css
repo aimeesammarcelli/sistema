@@ -377,6 +377,17 @@ header {
     box-sizing: border-box;
 }
 
+.image-faq {
+    background-image: url(../image/background/faq/faq.png);
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 .heading-primary {
     font-size: 2em;
@@ -614,5 +625,18 @@ header {
 @media screen and (max-width: 834px) {
     .defis {
         margin-left: 0;
+    }
+
+    .texte {
+        top: 40%;
+    }
+
+    p{
+        width: 100%;
+    }
+
+    .defis .description-defis {
+        padding-top: 25px;
+        padding-left: 20px;
     }
 }

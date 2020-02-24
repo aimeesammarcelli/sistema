@@ -8,30 +8,30 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="icon" type="image/png" href="/image/logo/logo.png" />
 
-    <!-- PWA -->
+ <!-- PWA -->
 
-  <script defer src="../javas/crypto.js"></script>
-  <script defer src="../javas/main.js"></script>
-  <link rel="manifest" href="../javas/manifest.json" />
-  <meta name="theme-color" content="#008080">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+ <script defer src="../javas/main.js"></script>
+        <link rel="manifest" href="../javas/manifest.json" />
+        <meta name="theme-color" content="#008080">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 
-  <script>
-      if ('serviceWorker' in navigator) {
-          // Register a service worker hosted at the root of the
-          // site using a more restrictive scope.
-          navigator.serviceWorker.register('./sw.js', {scope: './'}).then(function(registration) {
-              console.log('Service worker registration succeeded:', registration);
-          }, /*catch*/ function(error) {
-              console.log('Service worker registration failed:', error);
-          });
-      } else {
-          console.log('Service workers are not supported.');
-      }	
+        <script>
+            if ('serviceWorker' in navigator) {
+                // Register a service worker hosted at the root of the
+                // site using a more restrictive scope.
+                navigator.serviceWorker.register('../sw.js', {scope: './'}).then(function(registration) {
+                    console.log('Service worker registration succeeded:', registration);
+                }, /*catch*/ function(error) {
+                    console.log('Service worker registration failed:', error);
+                });
+            } else {
+                console.log('Service workers are not supported.');
+            }	
 
-  </script>
+        </script>
+
     <?php
 session_start();
 require_once ('../connect.php');
@@ -69,7 +69,7 @@ if (isset($_SESSION['name'])) {
         <div class="bonjour">
             <p>Bonjour&nbsp; </p>
             <p class="prenom"> <?php echo $name ?></p>
-            <p>, c’est l’heure de ton défis du jours !</p>
+            <p>, c’est l’heure de ton défi du jour !</p>
         </div>
     </div>
 
