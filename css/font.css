@@ -1,0 +1,23 @@
+body{
+    font-family: 'Heebo', sans-serif;
+    color: #222222;
+}
+
+h1{
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #0B581E;
+}
+
+p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    line-height: 31px;
+}
+
+h2{
+    font-family: 'Heebo',sans-serif;
+    font-size: 25px;
+    color: #0B581E;
+}

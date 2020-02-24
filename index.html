@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Onboarding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="icon" type="image/png" href="/image/logo/logo.png" />
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="../package/css/swiper.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+  <!-- PWA -->
+
+        <script defer src="javas/main.js"></script>
+        <link rel="manifest" href="javas/manifest.json" />
+        <meta name="theme-color" content="#008080">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+        <script>
+            if ('serviceWorker' in navigator) {
+                // Register a service worker hosted at the root of the
+                // site using a more restrictive scope.
+                navigator.serviceWorker.register('sw.js', {scope: './'}).then(function(registration) {
+                    console.log('Service worker registration succeeded:', registration);
+                }, /*catch*/ function(error) {
+                    console.log('Service worker registration failed:', error);
+                });
+            } else {
+                console.log('Service workers are not supported.');
+            }	
+
+        </script>
+
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #ffffff;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 80%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+  <!-- next -->
+
+  <a href="../connexion/connexion/index.php" class="skip">
+  <p>Skip</p>
+  </a>
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+  <!-- onboarding 1 -->
+
+      <div class="swiper-slide" id="slide1">
+        <img class="swiper-slider-img" src="/aimee1.png" alt="" class="groupe">
+
+        <h1>Étape 1 : Inscription </h1>
+
+        <p>Toutes vos informations seront bien gardées</p>
+
+
+        <div class="cta">
+
+          <a href="#slide2" class="button-green-c"> Suivant </a>
+
+        </div>
+
+      </div>
+
+  <!-- onboarding 2 -->
+
+  <div class="swiper-slide" id="slide2">
+    <img  class="swiper-slider-img" src="../image/illus/aimee3.png" alt="">
+
+    <h1>Étape 2 : Sistema une Progressive Web App </h1>
+
+    <p>Un site? Une application? Pourquoi pas les deux?</p>
+
+
+    <div class="cta">
+
+      <a href="#slide3" class="button-green-c"> Suivant </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- onboarding 3 -->
+
+  <div class="swiper-slide" id="slide3">
+    <img class="swiper-slider-img" src="../image/illus/aimee4.png" alt="">
+
+    <h1>Étape 3: Je réalise mes défis</h1>
+
+    <p>Revenez tous les matins pour découvrire votre défis du jour</p>
+
+
+    <div class="cta">
+
+      <a href="../connexion/connexion/index.php" class="button-green-c"> Suivant </a>
+
+    </div>
+
+  </div>
+
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="../package/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/png" href="/image/logo/logo.png" />
+    <title>A propos</title>
+
+    <!-- PWA -->
+
+  <script defer src="../javas/crypto.js"></script>
+  <script defer src="../javas/main.js"></script>
+  <link rel="manifest" href="../javas/manifest.json" />
+  <meta name="theme-color" content="#008080">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+  <script>
+      if ('serviceWorker' in navigator) {
+          // Register a service worker hosted at the root of the
+          // site using a more restrictive scope.
+          navigator.serviceWorker.register('./sw.js', {scope: './'}).then(function(registration) {
+              console.log('Service worker registration succeeded:', registration);
+          }, /*catch*/ function(error) {
+              console.log('Service worker registration failed:', error);
+          });
+      } else {
+          console.log('Service workers are not supported.');
+      }	
+
+  </script>
+</head>
+<body>
+    
+    <div class="image-apropos">
+        
+        <a href="../defis/index.php" class="btn" id="sidebar-menu-close">
+            <span class="cross cross-one"></span>
+            <span class="cross cross-two"></span>
+        </a>
+
+        <!-- <img src="aimee.png"> -->
+    </div>
+
+    <div class="texte">
+        <h1>A propos de moi </h1>
+        <p>Le projet que je vais réaliser se base sur l’écologie.
+
+            Mon projet consiste à permettre aux utilisateurs de faire des petits gestes pour l’environnement chaque jour à travers des missions proposées par ma « web app ».
+            
+            Ce projet a pour but de faire évoluer l’utilisateur tout au long de son parcours, grâce à la mission qu’il devra effectuer chaque jour. À chaque mission réalisée, l’utilisateur notifiera sur son application que celle-ci a été effectuée, en contrepartie, il recevra des points lui permettant de débloquer des niveaux. Le but étant ici, d’encourager l’utilisateur à effectuer les missions à travers la gamification.
+            
+            La web app pourra être utilisée de deux manières différentes.
+            
+            La première, l’utilisateur devra se rendre chaque jour sur le site pour y effectuer « le défi du jour ».
+            
+            La seconde utilisation, dont l’utilisateur pourra faire effet, sera de se connecter à son compte, où il pourra accéder à sa mission du jour. Si l’utilisateur est connecté et qu’à une heure précise dans l’après-midi, il n’a toujours pas effectué sa mission il recevra une notification de rappel pour effectuer cette dernière.
+            
+            Les cibles de ma web app sont les utilisateurs se trouvant dans une tranche d’âge de 16 ans à 65 ans et +.
+            
+            J’ai choisi une tranche d’âge très large car je pense que toutes les personnes ayant accès a internet aujourd'hui peuvent se sentir concernées et motivées pour réaliser ces challenges du quotidien.
+            
+            Lors de la découverte de la mission du jour, l’utilisateur doit avoir un sentiment de mise au défi, il doit se lever chaque matin en ayant une envie d’accomplir ce défi quotidien.
+            
+            La stratégie de déploiement est la communication sur les réseaux sociaux mais également de se faire connaitre grâce la notoriété des partenaires trouvés.
+            
+            La clé de ma communication est l’envie de vivre dans un monde meilleur en changeant nos petites habitudes du quotidien, à l’aide de gestes pour l’environnement simples.
+        </p>
+    </div>
+
+
+    <script src="/defis-ouvert/main.js"></script>
+</body>
+</html>
